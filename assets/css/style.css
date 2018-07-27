@@ -1,45 +1,28 @@
 
-* , *:after, *:before{
-     margin : 0;
-     padding: 0;
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-}
-
-#contenedor_carga{
-  background-color:rgba (250, 240, 245, 0.9);
-  height: 100%;
+#loadPage{
+  display: block;
+  background: rgb(7, 7, 7);
+  color: gold;
   width: 100%;
+  height: 100%;
   position: fixed;
-  -webkit-transition: all 5.3s ease;
-  -o-transition: all 5.3s ease;
-  transition: all 5.3s ease;
-  z-index: 10000;
-}
-
-#carga{
-  border:15px solid #ccc;
-  border-top-color:#FFFA6D;
-  border-top-style:groove;
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-
-  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  -webkit-animation: girar 1.5s linear infinite;
-    -o-animation: girar 1.5s linear infinite;
-    animation: girar 1.5s linear infinite;
+  z-index: 1000;
+  
 }
 
-@keyframes girar {
-  from { transform: rotate(0deg);}
-  to { transform: rotate(360deg);}
+#loadPage p{
+  display: block;
+  width: 100px;
+  height: 30px;
+  font-size: 30px;
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
 #map {
@@ -55,4 +38,75 @@
 
 body{
   background-color: black;
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+#target {
+  width: 345px;
 }

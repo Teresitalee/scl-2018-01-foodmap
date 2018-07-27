@@ -13,19 +13,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css?h=0fabd843930260ac2cc6a40466f6d0cc">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+    $(window).load(function(){
+        $("#loadPage").delay(3000).fadeOut("slow");
+    });
+    </script>
 </head>
 
 <body> 
+    <span id="loadPage">
+        <p><img src="assets/img/logo.png"><br>cargando</p>
+    </span>
+     <!-- heading title-->
+    <div id="container">        
     <h1 style="font-family:Allan, cursive;font-size:50px;padding-left:80px;color:rgb(224,208,61);padding-top:10px;padding-bottom:40px;padding-right:10px;margin-top:30px;margin-bottom:10px;"><i class="fa fa-map-marker" style="color:rgb(247,6,6);"></i>&nbsp; FoodMap</h1> 
     <div class="map-clean">
+
             <div class="container" id="map">
                 <div class="intro"></div>
-           
         </div>
+    </div> 
 
-
-    <div>
+    <!-- inicio de busqueda restaurant-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="height:70px;">
@@ -33,7 +43,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    
+     <!-- search box restaurant-->
     <div>
         <div class="container">
             <div class="row">
@@ -41,9 +52,11 @@
                     <div class="row padMar">
                         <div class="col padMar">
                             <div class="input-group">
-                                <div class="input-group-prepend"></div>
-                                <input class="form-control autocomplete" id="pac-input" type="text" placeholder="Search Box">
-                                <div class="input-group-append"><button class="btn btn-warning" type="button"><i class="fa fa-search"></i></button></div>
+                                
+                                <input id="pac-input" class="controls" type="text" placeholder="buscar....">
+                                <div class="input-group-append">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -52,17 +65,18 @@
         </div>
     </div>
    
+ <!-- Galerry food-->
 
     <div class="photo-gallery" style="background-color:rgb(1,1,1);">
         <div class="container">
             <div class="intro"></div>
             <div class="row photos" style="background-color:#0b0b0b;">
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="" data-lightbox="photos"><img class="img-fluid" src="assets/img/comida-chilena.jpg?h=680ffb5a4848cfa4b1a84a1c0682ecc2" style="height:206px;width:330px;"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="" data-lightbox="photos"><img class="img-fluid" src="assets/img/comidarapida.jpg?h=ce9e8026606c993a7207e42344e5066e" style="width:330px;height:206px;"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="" data-lightbox="photos"><img class="img-fluid" src="assets/img/comida-mexicana.jpg" style="width:330px;height:206px;"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="" data-lightbox="photos"><img class="img-fluid" src="assets/img/comida-italiana.jpg?h=32081bad9568ad781cdd1a0fcbbf9322" style="width:330px;height:206px;"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="" data-lightbox="photos"><img class="img-fluid" src="assets/img/comida-peruana.png?h=2ecb5d33f72adade17d86232629667b3" style="width:330px;height:206px;"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="" data-lightbox="photos"><img class="img-fluid" src="assets/img/COMIDA-CHINA-1040x541.jpg?h=1d59c3df201488032248feb1fe0adac4" style="height:206px;width:330px;"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><img class="img-fluid" src="assets/img/comida-chilena.jpg?h=680ffb5a4848cfa4b1a84a1c0682ecc2" style="height:206px;width:330px;"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><img class="img-fluid" src="assets/img/comidarapida.jpg?h=ce9e8026606c993a7207e42344e5066e" style="width:330px;height:206px;"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><img class="img-fluid" src="assets/img/comida-mexicana.jpg" style="width:330px;height:206px;"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><img class="img-fluid" src="assets/img/comida-italiana.jpg?h=32081bad9568ad781cdd1a0fcbbf9322" style="width:330px;height:206px;"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><img class="img-fluid" src="assets/img/comida-peruana.png?h=2ecb5d33f72adade17d86232629667b3" style="width:330px;height:206px;"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><img class="img-fluid" src="assets/img/COMIDA-CHINA-1040x541.jpg?h=1d59c3df201488032248feb1fe0adac4" style="height:206px;width:330px;"></a></div>
             </div>
         </div>
     </div>
